@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	background-color: #111729;
+	color: #fff;
+	gap: 20px;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+.container {
+	text-align: center;
+	width: 500px;
+	padding: 30px 50px;
+	display: none;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../assets/bg-image-random-quote.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #20293a;
+	border-radius: 15px;
+
+	h2 {
+		font-weight: 500;
+	}
+
+	.category {
+		margin-top: 5px;
+		margin-bottom: 15px;
+		font-size: 12px;
+		width: fit-content;
+		padding: 5px 10px;
+		border-radius: 10px;
+		text-align: center;
+		border: 2px solid #6466e9;
+		color: #6466e9;
+	}
+
+	.quote {
+		color: #97a3b6;
+		font-size: 24px;
+		font-weight: 400;
+	}
+}
+
+.activity {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.button-container {
+	border: 2px solid #eee;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 15px;
+	gap: 15px;
+	cursor: pointer;
+	border-radius: 15px;
+
+	img {
+		width: 30px;
+	}
+
+	.line {
+		width: 2px;
+		height: 100%;
+		background-color: #eee;
+	}
+}
+
+.generate-button {
+	cursor: pointer;
+	color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #615efc;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 550px) {
+	body {
+		overflow: hidden;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.container {
+		width: 350px;
+
+		h2 {
+			font-size: 20px;
+		}
+
+		.category {
+			font-size: 10px;
+		}
+
+		.quote {
+			color: #97a3b6;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+
+	.button-container {
+		img {
+			width: 25px;
+		}
+	}
+}
