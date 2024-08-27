@@ -63,6 +63,3 @@ copyButton.addEventListener('click', function () {
 		alert('Quote copied to clipboard')
 	})
 })
-
-const share = document.querySelector('.share')
-share.addEventListener('click', function () {})
